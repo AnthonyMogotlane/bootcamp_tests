@@ -2,21 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>TDD using Mocha and Chai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
   </head>
 
 <body>
-    <div id="mocha"></div>
+    <div id="mocha">Bootcamp function test</div>
     <script>
         mocha.setup('bdd');
         var assert = chai.assert;
     </script>
-    <!-- greet function and test js -->
+    <!-- greet function -->
     <script src="greet.js"></script>
-    <script src="/tests/greet.test.js" charset="utf-8"></script>
+    <script src="/tests/greet.test.js"></script>
+
+    <!-- isFromBellville function -->
+    <script src="isFromBellville.js"></script>
+    <script src="/tests/isFromBellville.test.js"></script>
+
+     <!-- regCheck function -->
+     <script src="regCheck.js"></script>
+     <script src="/tests/regCheck..test.js"></script>
+
     <script>
         mocha.checkLeaks();
         mocha.run();
