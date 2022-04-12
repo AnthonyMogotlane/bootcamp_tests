@@ -16,6 +16,4 @@ var totalPhoneBill = function(callAndSms) {
     var totalBill = callBill + smsBill;
     
     return "R" + totalBill.toFixed(2);
-  }
-  
-  console.log(totalPhoneBill("call, sms, call, sms, sms"));
+}

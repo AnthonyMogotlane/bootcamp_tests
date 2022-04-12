@@ -1,9 +1,9 @@
 describe("fromWhere", () => {
     it("Registration number 'CY 855-325' should be from 'Bellville'.", () => {
-        assert.equal(fromWhere("CY 855-325"), "Bellville");
+        assert.deepEqual(fromWhere("CY 855-325"), "Bellville");
     })
 
     it("Registration number 'CJ 235-896' should be from 'Paarl'.", () => {
-        assert.equal(fromWhere("CJ 235-896"), "Paarl");
+        assert.deepEqual(fromWhere("CJ 235-896"), "Paarl");
     })
 })

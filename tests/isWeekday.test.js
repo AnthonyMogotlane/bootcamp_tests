@@ -1,9 +1,9 @@
-describe("isWeekday function", function() {
-    it("Monday is a day in the week", function() {
-        assert.equal(isWeekday("Monday"), true);
+describe("isWeekday", function() {
+    it("Monday is a day in the week.", function() {
+        assert.deepEqual(isWeekday("Monday"), true);
     })
 
-    it("Friday is a day in the week", function() {
-        assert.equal(isWeekday("Friday"), true);
+    it("Friday is a day in the week.", function() {
+        assert.deepEqual(isWeekday("Friday"), true);
     })
 })
