@@ -8,7 +8,7 @@ describe("regCheck", function() {
     })
 
     it("The registration number YH 45 HN GP ends with GP not EC, that is incorrect", function() {
-        assert.deepEqual(regCheck("YH 45 HN GP", "GP"), true)
+        assert.deepEqual(regCheck("YH 45 HN GP", "EC"), false)
     })
 
     it("The registration number FHN 679 EC ends with EC not MP, that is incorrect", function() {
