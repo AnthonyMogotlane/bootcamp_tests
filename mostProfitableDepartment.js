@@ -1,6 +1,6 @@
 //Function to find the most profitable department
 var mostProfitableDepartment = (data) => {
-  
+
     var departmentMap = {}; //empty object
     
     //Initiation each department thats gonna be pushed to an empty object equal to zero
@@ -38,4 +38,5 @@ var mostProfitableDepartment = (data) => {
       }
     }
     return HighSalesDepartment;
-  }
+}
+
