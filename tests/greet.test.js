@@ -7,7 +7,7 @@ describe("greet", function() {
     assert.deepEqual(greet("Coders"), "Hello, Coders");
   })
 
-  it("It should return 'Please enter a valid name, not number' if the input in a number", () => {
+  it("It should return 'Please enter a valid name, not number' if the input in a number.", () => {
     assert.equal(greet(10), "Please enter a valid name, not number")
   })
 })

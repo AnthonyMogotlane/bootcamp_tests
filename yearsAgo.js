@@ -5,5 +5,4 @@ var yearsAgo = year => {
     return thisYear - year;
 } 
 
-console.log(yearsAgo(2023));
 // console.log(`The year ${year} entered is greater than the current year`);
