@@ -1,5 +1,5 @@
 var totalPhoneBill = function(callAndSms) {
-    if(typeof(callAndSms) === "number") return "Pass a string not a number";
+    if(typeof(callAndSms) === "number") return "invalid data input";
     var callBill = 0;
     var smsBill = 0;
     

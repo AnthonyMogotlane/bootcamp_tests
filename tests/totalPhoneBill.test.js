@@ -1,15 +1,13 @@
 describe("The totalPhoneBill function", () => {
-    it("It should return total bill of 'R7.45' for 'call, sms, call, sms, sms'.", () => {
+    it("should return the total cost of the phone bill", () => {
         assert.deepEqual(totalPhoneBill("call, sms, call, sms, sms"), "R7.45");
     })
 
-    it("It should return total bill of 'R6.15' for 'call, sms, call'.", () => {
-        assert.deepEqual(totalPhoneBill("call, sms, call"), "R6.15");
+    it("should return 'invalid data input' if the input is a number", () => {
+        assert.deepEqual(totalPhoneBill(20), "invalid data input");
     })
 
-    it("It should return 'Pass a string not a number' if the passed argument is a number.", () => {
-        assert.deepEqual(totalPhoneBill(20), "Pass a string not a number");
+    it("should return R0.00 if no calls made or sms's sent", () => {
+        assert.deepEqual(totalPhoneBill(""), "R0.00");
     })
-
-
 })
