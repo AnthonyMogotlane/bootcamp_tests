@@ -1,7 +1,7 @@
 var yearsAgo = year => {
     const date = new Date();
     const thisYear = date.getFullYear();
-    if(year >= thisYear) return "Enter a year which is lessthan the current year";
+    if(year >= thisYear) return "input the year lessthan the current year";
     return thisYear - year;
 } 
 
