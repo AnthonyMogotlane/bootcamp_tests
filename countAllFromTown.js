@@ -1,5 +1,5 @@
 var countAllFromTown = function(regNumbers, startReg) {
-    if(!(regNumbers.startsWith(startReg))) return "No registration numbers starting with CA";
+    if(!(regNumbers.startsWith(startReg))) return 0;
     var regNumList = regNumbers.split(",");
 
     var townRegNum = [];
