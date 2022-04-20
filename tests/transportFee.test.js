@@ -1,13 +1,13 @@
 describe("The transportFee function", () => {
-    it("Should return 'R20' for morning shift.", () => {
+    it("should return 'R20' if the input string is 'morning'", () => {
         assert.deepEqual(transportFee("morning"), "R20");
     })
 
-    it("Should return 'R10' for afternoon shift.", () => {
+    it("should return 'R10' if the input string is 'afternoon'", () => {
         assert.deepEqual(transportFee("afternoon"), "R10");
     })
 
-    it("Should return 'free' for nightshift shift.", () => {
+    it("should return 'free' if the input string is 'nightshift'", () => {
         assert.deepEqual(transportFee("nightshift"), "free", "Is mahala for nightshift");
     })
 })
