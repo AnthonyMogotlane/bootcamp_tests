@@ -1,5 +1,5 @@
 var countRegNumber = function(regNumbers) {
-    if(typeof(regNumbers) !== "string") return "Please input a string with registration numbers seperated by comma";
+    if(typeof(regNumbers) !== "string") return "invalid data input";
     return regNumbers.split(",").map(regNum => regNum).length;
     
 }
