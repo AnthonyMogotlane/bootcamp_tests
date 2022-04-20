@@ -1,13 +1,13 @@
 describe("The countAllPaarl function", () => {
-    it("It should return 2 for 'CJ 547-598, CJ 585858'.", () => {
+    it("should return how many registration numbers are from Paarl", () => {
         assert.deepEqual(countAllPaarl("CJ 547-598, CJ 585858"), 2);
     })
 
-    it("It should return 6 from 'CJ 547-598, CJ 585-858, CJ 547-598, CJ 455-858, CJ 647-124, CJ 585-858'.", () => {
+    it("should return how many registration numbers are from Paarl", () => {
         assert.deepEqual(countAllPaarl("CJ 547-598, CJ 585-858, CJ 547-598, CJ 455-858, CJ 647-124, CJ 585-858"), 6);
     })
 
-    it("It should return 'No registration numbers in the passed string' for empty string.", () => {
-        assert.deepEqual(countAllPaarl(""), "No registration numbers in the passed string");
+    it("should return 'no registration numbers' if the input string is empty", () => {
+        assert.deepEqual(countAllPaarl(""), "no registration numbers");
     })
 })
