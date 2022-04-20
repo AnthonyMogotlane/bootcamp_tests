@@ -1,4 +1,5 @@
 var countAllPaarl = function(regNumbers) {
+    if(regNumbers.length === 0) return "No registration numbers in the passed string";
     var regNumList = regNumbers.split(",");
     var paarlRegNum = [];
     

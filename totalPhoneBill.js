@@ -1,4 +1,5 @@
 var totalPhoneBill = function(callAndSms) {
+    if(typeof(callAndSms) === "number") return "Pass a string not a number";
     var callBill = 0;
     var smsBill = 0;
     
@@ -17,3 +18,4 @@ var totalPhoneBill = function(callAndSms) {
     
     return "R" + totalBill.toFixed(2);
 }
+
