@@ -1,13 +1,13 @@
 describe("The fromWhere function", () => {
-    it("It should return 'Bellville' for string 'CY 855-325'.", () => {
+    it("should return the town the input registration number is from", () => {
         assert.deepEqual(fromWhere("CY 855-325"), "Bellville");
     })
 
-    it("It should return 'Paarl' for string 'CL 855-325'.", () => {
+    it("should return the town the input registration number is from", () => {
         assert.deepEqual(fromWhere("CJ 855-325"), "Paarl");
     })
 
-    it("It should return 'Some other place!' for string 'CF 865-685'.", () => {
-        assert.deepEqual(fromWhere("CF 865-685"), "Some other place!");
+    it("should return 'some other place' if the registration indicator does not start with 'CY' or 'CF' or 'CA'", () => {
+        assert.deepEqual(fromWhere("CF 865-685"), "some other place!");
     })
 })

@@ -6,6 +6,6 @@ var fromWhere = function(regNumber) {
     } else if(regNumber.startsWith("CA")) {
         return "Cape Town";
     } else {
-        return "Some other place!";
+        return "some other place!";
     }
 }
