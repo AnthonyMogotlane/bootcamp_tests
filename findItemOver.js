@@ -1,5 +1,5 @@
 var findItemsOver = (listOfItems, treshold) => {
-    if(typeof(treshold) === "string") return "The treshold should be a number not a string";
+    if(typeof(treshold) === "string") return "invalid threshold data input";
     var itemsOverTreshold = [];
         
     for(var item of listOfItems) {

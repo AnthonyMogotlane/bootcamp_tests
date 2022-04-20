@@ -1,5 +1,5 @@
 describe("The mostProfitableDepartment function", () => {
-    it("It should return 'outdoor' for the most profitable department.", () => {
+    it("should return the name of the most profitable department", () => {
         var salesData = [
             {department: 'hardware', sales: 4500, day: 'Monday'},
             {department: 'outdoor', sales: 1500, day: 'Monday'},
@@ -22,7 +22,7 @@ describe("The mostProfitableDepartment function", () => {
         assert.deepEqual(result, "outdoor")
     })
 
-    it("It should return 'outdoor' for the most profitable department.", () => {
+    it("should return the name of the most profitable department", () => {
         var salesData = [
             {department: 'outdoor', sales: 4500, day: 'Monday'},
             {department: 'hardware', sales: 1500, day: 'Monday'},
@@ -45,8 +45,8 @@ describe("The mostProfitableDepartment function", () => {
         assert.deepEqual(result, "hardware");
     })
 
-    it("It should return 'No data in the list' if the array is empty.", () => {
-        assert.deepEqual(mostProfitableDepartment([]), "No data in the list");
+    it("should return 'no data in the list' for an empty list", () => {
+        assert.deepEqual(mostProfitableDepartment([]), "no data in the list");
     })
 
 })
