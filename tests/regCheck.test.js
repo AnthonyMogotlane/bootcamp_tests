@@ -11,7 +11,7 @@ describe("The regCheck function", function() {
         assert.deepEqual(regCheck("YH 45 HN GP", "EC"), false);
     })
 
-    it("It should return false for registration number that does not end with registration indicator 'GP' or 'MP' or 'EC' or 'L'", function() {
+    it("should return false for registration number that does not end with registration indicator 'GP' or 'MP' or 'EC' or 'L'", function() {
         assert.deepEqual(regCheck("CY 485-589", "CY"), false);
     })
 })
