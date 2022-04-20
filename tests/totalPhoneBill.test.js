@@ -1,4 +1,4 @@
-describe("totalPhoneBill", () => {
+describe("The totalPhoneBill function", () => {
     it("It should return total bill of 'R7.45' for 'call, sms, call, sms, sms'.", () => {
         assert.deepEqual(totalPhoneBill("call, sms, call, sms, sms"), "R7.45");
     })

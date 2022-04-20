@@ -1,4 +1,4 @@
-describe("countRegNumber", function() {
+describe("The countRegNumber function", function() {
     it("It should return 3 registration numbers for string 'CA 182736,CY 523519,CJ 812328'.", function() {
         assert.deepEqual(countRegNumber("CA 182-736,CY 523-519,CJ 812-328"), 3);
     })

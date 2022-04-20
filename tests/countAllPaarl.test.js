@@ -1,4 +1,4 @@
-describe("countAllPaarl", () => {
+describe("The countAllPaarl function", () => {
     it("It should return 2 for 'CJ 547-598, CJ 585858'.", () => {
         assert.deepEqual(countAllPaarl("CJ 547-598, CJ 585858"), 2);
     })

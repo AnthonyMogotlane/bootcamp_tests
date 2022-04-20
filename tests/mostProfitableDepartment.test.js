@@ -1,4 +1,4 @@
-describe("mostProfitableDepartment", () => {
+describe("The mostProfitableDepartment function", () => {
     it("It should return 'outdoor' for the most profitable department.", () => {
         var salesData = [
             {department: 'hardware', sales: 4500, day: 'Monday'},

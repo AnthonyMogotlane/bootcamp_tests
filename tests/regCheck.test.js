@@ -1,4 +1,4 @@
-describe("regCheck", function() {
+describe("The regCheck function", function() {
     it("It should return true for registration number 'COD 456 MP' which ends with 'MP'.", function() {
         assert.deepEqual(regCheck("COD 456 MP", "MP"), true);
     })

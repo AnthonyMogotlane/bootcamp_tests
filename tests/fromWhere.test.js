@@ -1,4 +1,4 @@
-describe("fromWhere", () => {
+describe("The fromWhere function", () => {
     it("It should return 'Bellville' for string 'CY 855-325'.", () => {
         assert.deepEqual(fromWhere("CY 855-325"), "Bellville");
     })

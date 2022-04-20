@@ -1,13 +1,13 @@
-describe("greet", function() {
-  it("It should return 'Hello, Mentors' for input 'Mentors'.", function () {
+describe("The greet function", function() {
+  it("should return 'Hello, Mentors' for input 'Mentors'", function () {
     assert.deepEqual(greet("Mentors"), "Hello, Mentors");
   })
 
-  it("It should return 'Hello, Coders' for input 'Coders'.", function () {
+  it("should return 'Hello, Coders' for input 'Coders'", function () {
     assert.deepEqual(greet("Coders"), "Hello, Coders");
   })
 
-  it("It should return 'Please enter a valid name, not number' if the input in a number.", () => {
-    assert.equal(greet(10), "Please enter a valid name, not number")
+  it("should return 'invalid input' if the input is not a string", () => {
+    assert.equal(greet(10), "invalid input")
   })
 })

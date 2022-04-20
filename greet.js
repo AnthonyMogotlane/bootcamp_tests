@@ -1,3 +1,3 @@
 const greet = firstName => {
-    return (typeof firstName === "string") ? "Hello, " + firstName: "Please enter a valid name, not number";
+    return (typeof firstName === "string") ? "Hello, " + firstName: "invalid input";
 }

@@ -1,4 +1,4 @@
-describe("findItemOver", () => {
+describe("The findItemOver function", () => {
     it("It should return [{name : 'pears', qty : 37}] for treshold over 30.", () => {
         let result = findItemsOver([{name : 'apples', qty : 10}, {name : 'pears', qty : 37}, {name : 'bananas', qty : 27}, {name : 'apples', qty : 3}], 30);
         assert.deepEqual(result, [{name : 'pears', qty : 37}]);

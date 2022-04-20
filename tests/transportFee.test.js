@@ -1,4 +1,4 @@
-describe("transportFee", () => {
+describe("The transportFee function", () => {
     it("Should return 'R20' for morning shift.", () => {
         assert.deepEqual(transportFee("morning"), "R20");
     })

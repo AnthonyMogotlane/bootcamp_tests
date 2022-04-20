@@ -1,4 +1,4 @@
-describe("findItemOver20", () => {
+describe("The findItemOver20 function", () => {
     it("It should return [{name : 'pears', qty : 37}, {name : 'bananas', qty : 27}] for quantity over 20.", () => {
         let result = findItemsOver20([{name : 'apples', qty : 10}, {name : 'pears', qty : 37}, {name : 'bananas', qty : 27}, {name : 'apples', qty : 3}]);
         let expected = [{name : 'pears', qty : 37}, {name : 'bananas', qty : 27}];
