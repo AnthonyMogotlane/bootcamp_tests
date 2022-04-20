@@ -2,7 +2,7 @@
 // The function should return all the products that have a quantity higher than 20.
 
 var findItemsOver20 = (listOfItems) => {
-    if(listOfItems.length === 0) return "No data in the list";
+    if(listOfItems.length === 0) return "no items in the list";
  
     var itemsOver20 = [];
         
